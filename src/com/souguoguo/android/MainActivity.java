@@ -22,20 +22,21 @@ public class MainActivity extends Activity {
 	private final static String[] SHUTDOWN = { "reboot", "-p" };
 	private final static String[] REBOOT = { "reboot", };
 	private final static String TAG = "com.yin.system";
-	Button mButton;
+
+	// Button mButton;
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		mButton = (Button) findViewById(R.id.myButton);
-
-		mButton.setOnClickListener(new OnClickListener() {
-
-			public void onClick(View v) {
-				// root();
-				shutdown();
-			}
-		});
+		// mButton = (Button) findViewById(R.id.myButton);
+		//
+		// mButton.setOnClickListener(new OnClickListener() {
+		//
+		// public void onClick(View v) {
+		// // root();
+		// }
+		// });
+		shutdown();
 	}
 
 	public void getResult() {
